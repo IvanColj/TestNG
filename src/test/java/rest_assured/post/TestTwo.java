@@ -11,19 +11,19 @@ public class TestTwo {
 
     @Test
     public void checkRegistration() {
-        Request request = new Request("morpheus", "leader");
+        Create create = new Create("morpheus", "leader");
 
-        Create create = given()
-                .body(request)
+        Request request = given()
+                .body(create)
                 .when()
                 .contentType(ContentType.JSON)
                 .post(URL + "api/users")
                 .then().log()
                 .all()
                 .extract()
-                .as(Create.class);
+                .as(Request.class);
 
-        Assert.assertEquals(request.getJob(), create.getJob());
-        Assert.assertEquals(request.getName(), create.getName());
+        Assert.assertEquals(create.getJob(), request.getJob());
+        Assert.assertEquals(create.getName(), request.getName());
     }
 }

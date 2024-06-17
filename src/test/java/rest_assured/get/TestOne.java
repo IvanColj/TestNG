@@ -24,6 +24,6 @@ public class TestOne {
                 .getList("data", ResourceData.class);
 
         colors.forEach(item -> Assert.assertTrue(item.getColor().contains("#")));
-        Assert.assertTrue(colors.stream().allMatch(item -> item.getId() + 1999 == item.getYear()));
+        colors.forEach(item -> Assert.assertEquals((int) item.getYear(), item.getId() + 1999));
     }
 }

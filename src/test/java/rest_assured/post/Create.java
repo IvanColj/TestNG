@@ -1,11 +1,13 @@
 package rest_assured.post;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Create {
-    private final String name;
-    private final String job;
-    private final String id;
-    private final String createdAt;
+    private String name;
+    private String job;
 }

@@ -20,7 +20,7 @@
             </class>
             <class name="first.GroupTest">
             </class>
-            <class name="first.MajorTest">
+            <class name="first.BaseTest">
             </class>
         </classes>
     </test>

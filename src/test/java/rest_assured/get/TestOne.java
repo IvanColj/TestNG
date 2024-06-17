@@ -1,12 +1,10 @@
-package rest_assured;
+package rest_assured.get;
 
 import io.restassured.http.ContentType;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.*;
-import io.restassured.matcher.RestAssuredMatchers.*;
-import org.hamcrest.Matchers.*;
 
 import java.util.List;
 

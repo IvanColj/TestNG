@@ -1,4 +1,4 @@
-package rest_assured;
+package rest_assured.get;
 
 public class ResourceData {
     private Integer id;

@@ -4,7 +4,7 @@ import functions.functions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class GroupTest extends MajorTest {
+public class GroupTest extends BaseTest {
 
     private final functions functions = new functions();
     private final int NUMBER = 144;

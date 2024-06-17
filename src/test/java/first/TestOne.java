@@ -2,7 +2,7 @@ package first;
 
 import org.testng.annotations.Test;
 
-public class TestOne extends MajorTest {
+public class TestOne extends BaseTest {
 
     @Test (groups = "group2")
     public void ckeckSomething() {
@@ -14,4 +14,3 @@ public class TestOne extends MajorTest {
         System.out.println("Я метод тест");
     }
 }
-

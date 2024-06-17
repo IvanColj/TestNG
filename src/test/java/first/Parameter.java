@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class Parameter extends MajorTest {
+public class Parameter extends BaseTest {
 
     @Test
     @Parameters({"value", "isEven"})

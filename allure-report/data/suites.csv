@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Jun 18 16:30:44 MSK 2024","Tue Jun 18 16:30:47 MSK 2024","3723","TestNG","TestNG","rest_assured.get.TestOne","rest_assured.get.TestOne","checkHashtagInColorTest","checkHashtagInColorTest",""
+"passed","Tue Jun 18 16:30:44 MSK 2024","Tue Jun 18 16:30:47 MSK 2024","3013","TestNG","TestNG","rest_assured.put.TestThree","rest_assured.put.TestThree","updateData","updateData",""
+"passed","Tue Jun 18 16:30:44 MSK 2024","Tue Jun 18 16:30:47 MSK 2024","3013","TestNG","TestNG","rest_assured.post.TestTwo","rest_assured.post.TestTwo","checkRegistration","checkRegistration",""

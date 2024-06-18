@@ -1,5 +1,6 @@
 package rest_assured.get;
 
+import io.qameta.allure.Allure;
 import io.restassured.http.ContentType;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -10,6 +11,7 @@ import java.util.List;
 
 public class TestOne {
     private final static String URL = "https://reqres.in/";
+
     @Test
     public void checkHashtagInColorTest(){
         List<ResourceData> colors = given()
@@ -25,5 +27,6 @@ public class TestOne {
 
         colors.forEach(item -> Assert.assertTrue(item.getColor().contains("#")));
         colors.forEach(item -> Assert.assertEquals((int) item.getYear(), item.getId() + 1999));
+        Allure.addAttachment("name", "Ivan");
     }
 }

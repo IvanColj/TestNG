@@ -1,27 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="unit_test" parallel="classes" thread-count="3">
-    <test name="unit test">
-        <parameter name="value" value="11">
-        </parameter>
-        <parameter name="isEven" value="true">
-        </parameter>
-        <groups>
-            <run>
-                <include name="group1">
-                </include>
-            </run>
-        </groups>
+<suite name="TestNG" parallel="classes" thread-count="3">
+    <test name="TestNG">
         <classes>
-            <class name="first.Parameter">
-            </class>
-            <class name="first.TestOne">
-            </class>
-            <class name="first.GroupTest">
-            </class>
-            <class name="first.BaseTest">
-            </class>
+            <class name="rest_assured.get.TestOne"/>
+            <class name="rest_assured.post.TestTwo"/>
+            <class name="rest_assured.put.TestThree"/>
         </classes>
     </test>
 </suite>

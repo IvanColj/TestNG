@@ -1,5 +1,6 @@
 package rest_assured.post;
 
+import io.qameta.allure.Step;
 import io.restassured.http.ContentType;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -23,7 +24,17 @@ public class TestTwo {
                 .extract()
                 .as(Request.class);
 
-        Assert.assertEquals(create.getJob(), request.getJob());
-        Assert.assertEquals(create.getName(), request.getName());
+        step1(create.getJob(), request.getJob());
+        step2(create.getName(), request.getName());
+    }
+
+    @Step ("Step1")
+    public void step1(String create_job, String request_job) {
+        Assert.assertEquals(create_job, request_job);
+    }
+
+    @Step ("Step2")
+    public void step2(String create_name, String request_name) {
+        Assert.assertEquals(create_name, request_name);
     }
 }
